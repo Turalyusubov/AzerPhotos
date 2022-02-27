@@ -1,0 +1,73 @@
+.gallery{
+    background-color: rgb(47, 64, 75);
+    padding: 15vh 0vh;
+    .galleryHead{
+        color: white;
+        margin-bottom: 10vh;
+        border-left: 10px solid rgba(255, 255, 255, 0.5);
+        padding-left: 10px;
+        h2{
+            font-size: 50px;
+        }
+        
+    }
+    .galleryCards{
+        .photoCard{
+            width: 100%;
+            height: 300px;
+            margin-bottom: 20px;
+            box-shadow: 0px 0px 20px 10px rgb(41, 52, 60);
+            position: relative;
+            
+            .cardBackground{
+                position: relative;
+                img{
+                    width: 100%;
+                    height: 300px;
+                    object-fit: cover;
+                    filter: brightness(60%);
+                }
+            }
+            .cardHead{
+                position: absolute;
+                color: white;
+                top: 5vh;
+                left: 5vh;
+                font-weight: 700;
+                font-size: 25px;
+            }
+            .cardInfo{
+                position: absolute;
+                color: white;
+                z-index: 100;
+                left: 5vh;
+                bottom: 3vh;
+                display: none;
+            }
+            &:hover{
+                .cardInfo{
+                    display: block;
+                }
+                .cardHead{
+                    display: none;
+                }
+                // .top-gradient-box {
+                //     background: linear-gradient(to bottom, #999 0, #ffffff 7px, #ffffff 100%);
+                // }
+                .cardBackground{
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: rgb(135,188,246);
+                        background: linear-gradient(180deg, rgba(135,188,246,0.7763480392156863) 0%, rgba(172,211,254,0.41220238095238093) 41%, rgba(0,212,255,0) 100%);
+                        opacity: 0.75;
+                    }
+                }
+            }
+        }
+    }
+}

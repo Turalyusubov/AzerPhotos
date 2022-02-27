@@ -1,0 +1,34 @@
+.photographers{
+    padding: 15vh 0vh;
+    background-color: white;
+    .photographersHead{
+        margin-bottom: 10vh;
+        border-left: 10px solid rgb(47, 64, 75);
+        padding-left: 10px;
+        h2{
+            font-size: 50px;
+            color: rgba(17, 18, 22, 1);
+        }
+    }
+    .photographersBody{
+        .letterList{
+            ul{
+                list-style: none;
+                li{
+                    a{
+                        text-decoration: none;
+                        color: rgb(119, 119, 119);
+                        &:hover{
+                            color: rgb(47, 64, 75);
+                        }
+                    }
+                }
+                .letter{
+                    font-size: 24px;
+                    color: black !important;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

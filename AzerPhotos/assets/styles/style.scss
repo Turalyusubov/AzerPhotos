@@ -1,0 +1,43 @@
+// body{
+//     margin: 0vh 100vh;
+// }
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+body{
+    font-family: 'Cabin', sans-serif !important;
+}
+.sectionHead{
+    font-family: 'Tinos', serif !important;
+}
+
+@import "./header";
+
+.container{
+    max-width:1200px !important;
+    width:95% !important;
+}
+
+@import "./intro";
+
+@import "./gallery";
+
+@import "./photographers";
+
+@import "./contacts";
+
+@import "./sendMessage";
+
+@import "./copyright";

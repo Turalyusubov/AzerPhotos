@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AzerPhotos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Tinos:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cd9098ea9f.js" crossorigin="anonymous"></script>
+    <script src="/assets/js/script.js"></script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+
+<body>
+    <header id="navbar" class="fixed-top">
+        <!-- <nav>
+            <div class="navLogo">
+                <img src="./img/AzPh_logo.png" alt="">
+            </div>
+            <div class="navMenu">
+                <ul>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="#">Photographers</a>
+                    </li>
+                    <li>
+                        <a href="#">Events</a>
+                    </li>
+                    <li>
+                        <a href="#">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </nav> -->
+
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#"><img src="./img/AzPh_logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+            </button>
+
+            <div class="collapse navbar-collapse navMenu" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#galleryId">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#photographersId">Photographers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactsId">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="intro">
+            <div class="container">
+                <div class="introHead">
+                    <div class="logo">
+                        <img src="./img/AzPh_logo.png" alt="" id="introLogo">
+                    </div>
+                    <div class="logoText">
+                        <img src="./img/AzPh_logoText.png" alt="" id="introLogoText">
+                    </div>
+
+                </div>
+                <div class="introBody">
+                    <p><span>AzerPhotos</span> is a platform for young photographers in Azerbaijan</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+        </div>
+        <div class="gallery" id="galleryId">
+            <div class="container">
+                <div class="galleryHead sectionHead">
+                    <h2>The Gallery <br> Collection</h2>
+                </div>
+                <div class="galleryCards reveal">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="photoCard">
+                                <div class="cardBackground">
+                                    <img src="./img/photographs/alirza/alirza_1.jpg" alt="">
+                                </div>
+                                <div class="cardHead">
+                                    <p>Ali Rza</p>
+                                </div>
+                                <div class="cardInfo">
+                                    <p>Baku, 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="photoCard">
+                                <div class="cardBackground">
+                                    <img src="./img/photographs/fidan_nazimqizi/fidan_nazimqizi_1.jpg" alt="">
+                                </div>
+                                <div class="cardHead">
+                                    <p>Fidan Nazimqizi</p>
+                                </div>
+                                <div class="cardInfo">
+                                    <p>Horses, 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="photoCard">
+                                <div class="cardBackground">
+                                    <img src="./img/photographs/toghrul_faraj/toghrul_faraj_1.jpg" alt="">
+                                </div>
+                                <div class="cardHead">
+                                    <p>Toghrul Faraj</p>
+                                </div>
+                                <div class="cardInfo">
+                                    <p>Railways, 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="photoCard">
+                                <div class="cardBackground">
+                                    <img src="./img/photographs/alirza/alirza_1.jpg" alt="">
+                                </div>
+                                <div class="cardHead">
+                                    <p>Ali Rza</p>
+                                </div>
+                                <div class="cardInfo">
+                                    <p>Baku, 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="photoCard">
+                                <div class="cardBackground">
+                                    <img src="./img/photographs/fidan_nazimqizi/fidan_nazimqizi_1.jpg" alt="">
+                                </div>
+                                <div class="cardHead">
+                                    <p>Fidan Nazimqizi</p>
+                                </div>
+                                <div class="cardInfo">
+                                    <p>Horses, 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="photoCard">
+                                <div class="cardBackground">
+                                    <img src="./img/photographs/toghrul_faraj/toghrul_faraj_1.jpg" alt="">
+                                </div>
+                                <div class="cardHead">
+                                    <p>Toghrul Faraj</p>
+                                </div>
+                                <div class="cardInfo">
+                                    <p>Railways, 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="photographers" id="photographersId">
+            <div class="container">
+                <div class="photographersHead sectionHead">
+                    <h2>Photographers</h2>
+                </div>
+                <div class="photographersBody reveal">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="letterList">
+                                <ul>
+                                    <li class="letter">A</li>
+                                    <li><a href="#">Ali Rza</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="letterList">
+                                <ul>
+                                    <li class="letter">F</li>
+                                    <li><a href="#">Fidan Nazimqizi</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="letterList">
+                                <ul>
+                                    <li class="letter">T</li>
+                                    <li><a href="#">Toghrul Faraj</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contacts" id="contactsId">
+            <div class="container">
+                <div class="contactsHead sectionHead">
+                    <h2>Be In Touch</h2>
+                </div>
+                <div class="contactsBody reveal">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="address">
+                                <p>Address:</p>
+                                <p>Asaf Zeynalli street, Fortress. Az 1095</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="phones">
+                                <p>Phones:</p>
+                                <p>(+99412) 492 02 21<br>(+99412) 492 35 32</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="email">
+                                <p>E-mail:</p>
+                                <p>info@azerphotos.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sendMessage">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <form action="#" method="post" class="reveal">
+                            <input type="text" name="name" placeholder="Your Name">
+                            <br>
+                            <input type="email" name="email" placeholder="Your E-mail">
+                            <br>
+                            <textarea name="message" rows="1" placeholder="Message"></textarea>
+                            <br>
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2022 AzerPhotos. All Right Reserved.</p>
+        </div>
+    </main>
+    <footer></footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
