@@ -32,10 +32,11 @@ header{
                         text-decoration: none;
                         color: white;
                         border-bottom: 3px solid transparent;
+                        &:hover{
+                            border-bottom: 3px solid white;
+                        }
                     }
-                    &:hover{
-                        border-bottom: 3px solid white;
-                    }
+                    
                 }
             }
         }

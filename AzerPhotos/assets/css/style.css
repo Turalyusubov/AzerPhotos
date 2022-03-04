@@ -73,7 +73,7 @@ header nav .navMenu ul li a {
   border-bottom: 3px solid transparent;
 }
 
-header nav .navMenu ul li:hover {
+header nav .navMenu ul li a:hover {
   border-bottom: 3px solid white;
 }
 
@@ -177,12 +177,29 @@ header nav .navMenu ul li:hover {
   -webkit-box-shadow: 0px 0px 20px 10px #29343c;
           box-shadow: 0px 0px 20px 10px #29343c;
   position: relative;
-  -webkit-transition: all 2s;
-  transition: all 2s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 .gallery .galleryCards .photoCard .cardBackground {
   position: relative;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.gallery .galleryCards .photoCard .cardBackground::after {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #87bcf6;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(135, 188, 246, 0.776348)), color-stop(41%, rgba(172, 211, 254, 0.412202)), to(rgba(0, 212, 255, 0)));
+  background: linear-gradient(180deg, rgba(135, 188, 246, 0.776348) 0%, rgba(172, 211, 254, 0.412202) 41%, rgba(0, 212, 255, 0) 100%);
+  opacity: 0;
 }
 
 .gallery .galleryCards .photoCard .cardBackground img {
@@ -201,6 +218,8 @@ header nav .navMenu ul li:hover {
   left: 5vh;
   font-weight: 700;
   font-size: 25px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 .gallery .galleryCards .photoCard .cardInfo {
@@ -209,18 +228,36 @@ header nav .navMenu ul li:hover {
   z-index: 100;
   left: 5vh;
   bottom: 3vh;
-  display: none;
+  opacity: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.gallery .galleryCards .photoCard:hover {
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 .gallery .galleryCards .photoCard:hover .cardInfo {
-  display: block;
+  opacity: 1;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 .gallery .galleryCards .photoCard:hover .cardHead {
-  display: none;
+  opacity: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.gallery .galleryCards .photoCard:hover .cardBackground {
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 .gallery .galleryCards .photoCard:hover .cardBackground::after {
+  -webkit-transition: all .5s;
+  transition: all .5s;
   content: '';
   position: absolute;
   top: 0;
@@ -467,6 +504,8 @@ header nav .navMenu ul li:hover {
 .photographer .photos {
   margin-top: 70px;
   position: relative;
+  text-align: center;
+  width: 100%;
 }
 
 .photographer .photos .image-gallery {
