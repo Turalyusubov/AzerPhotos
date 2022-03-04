@@ -3,8 +3,11 @@
 // }
 
 html, body{
-    height: 100%;
     width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    // overflow-x: hidden; 
 }
 .reveal{
     position: relative;
@@ -41,3 +44,17 @@ body{
 @import "./sendMessage";
 
 @import "./copyright";
+
+
+
+// ABOUT PAGE
+
+@import "./pages/about";
+
+// PHOTOGRAPHER PAGE
+
+@import "./pages/photographer";
+
+// ARTICLES PAGE
+
+@import "./pages/articles";

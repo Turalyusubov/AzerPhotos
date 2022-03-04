@@ -16,32 +16,9 @@
 </head>
 
 <body>
-    <header id="navbar" class="fixed-top">
-        <!-- <nav>
-            <div class="navLogo">
-                <img src="./img/AzPh_logo.png" alt="">
-            </div>
-            <div class="navMenu">
-                <ul>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Gallery</a>
-                    </li>
-                    <li>
-                        <a href="#">Photographers</a>
-                    </li>
-                    <li>
-                        <a href="#">Events</a>
-                    </li>
-                    <li>
-                        <a href="#">Contacts</a>
-                    </li>
-                </ul>
-            </div>
-        </nav> -->
 
+    <!-- NAVBAR START -->
+    <header id="navbar" class="fixed-top">
         <nav class="navbar navbar-expand-lg">
             <a class="navbar-brand" href="#"><img src="./img/AzPh_logo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
@@ -52,7 +29,7 @@
             <div class="collapse navbar-collapse navMenu" id="navbarTogglerDemo02">
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="./pages/about.html">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#galleryId">Gallery</a>
@@ -61,7 +38,7 @@
                         <a class="nav-link" href="#photographersId">Photographers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Events</a>
+                        <a class="nav-link" href="./pages/articles.html">Articles</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contactsId">Contacts</a>
@@ -70,6 +47,9 @@
             </div>
         </nav>
     </header>
+    <!-- NAVBAR END -->
+
+    <!-- MAIN START -->
     <main>
         <div class="intro">
             <div class="container">
@@ -84,7 +64,7 @@
                 </div>
                 <div class="introBody">
                     <p><span>AzerPhotos</span> is a platform for young photographers in Azerbaijan</p>
-                    <a href="#">Read more</a>
+                    <a href="./pages/about.html">Read more</a>
                 </div>
             </div>
         </div>
@@ -96,17 +76,19 @@
                 <div class="galleryCards reveal">
                     <div class="row">
                         <div class="col-lg-4 col-md-6">
-                            <div class="photoCard">
-                                <div class="cardBackground">
-                                    <img src="./img/photographs/alirza/alirza_1.jpg" alt="">
+                            <a href="./pages/photographer.html">
+                                <div class="photoCard">
+                                    <div class="cardBackground">
+                                        <img src="./img/photographs/alirza/alirza_1.jpg" alt="">
+                                    </div>
+                                    <div class="cardHead">
+                                        <p>Ali Rza</p>
+                                    </div>
+                                    <div class="cardInfo">
+                                        <p>Baku, 2020</p>
+                                    </div>
                                 </div>
-                                <div class="cardHead">
-                                    <p>Ali Rza</p>
-                                </div>
-                                <div class="cardInfo">
-                                    <p>Baku, 2020</p>
-                                </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="col-lg-4 col-md-6">
                             <div class="photoCard">
@@ -190,7 +172,7 @@
                             <div class="letterList">
                                 <ul>
                                     <li class="letter">A</li>
-                                    <li><a href="#">Ali Rza</a></li>
+                                    <li><a href="./pages/photographer.html">Ali Rza</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -260,11 +242,16 @@
                 </div>
             </div>
         </div>
+    </main>
+    <!-- MAIN END -->
+
+    <!-- FOOTER START -->
+    <footer>
         <div class="copyright">
             <p>Copyright © 2022 AzerPhotos. All Right Reserved.</p>
         </div>
-    </main>
-    <footer></footer>
+    </footer>
+    <!-- FOOTER END -->
 
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"

@@ -1,0 +1,26 @@
+.aboutHead{
+    margin-top: 120px;
+    margin-bottom: 10vh;
+        border-left: 10px solid rgb(47, 64, 75);
+        padding-left: 10px;
+        h2{
+            font-size: 50px;
+            color: rgba(17, 18, 22, 1);
+        }
+}
+
+.aboutBody{
+    min-width: 50vh;
+    max-width: 130vh;
+    font-size: 20px;
+    span{
+        font-weight: 700;
+    }
+    img{
+        margin: 40px 0px;
+        height: 20vh;
+        width: 95%;
+        object-fit: cover;
+        filter: brightness(40%);
+    }
+}

@@ -18,7 +18,7 @@
             margin-bottom: 20px;
             box-shadow: 0px 0px 20px 10px rgb(41, 52, 60);
             position: relative;
-            
+            transition: all 2s;
             .cardBackground{
                 position: relative;
                 img{
@@ -51,9 +51,6 @@
                 .cardHead{
                     display: none;
                 }
-                // .top-gradient-box {
-                //     background: linear-gradient(to bottom, #999 0, #ffffff 7px, #ffffff 100%);
-                // }
                 .cardBackground{
                     &::after{
                         content: '';
