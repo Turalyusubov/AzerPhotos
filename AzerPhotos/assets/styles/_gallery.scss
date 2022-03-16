@@ -18,12 +18,12 @@
             margin-bottom: 20px;
             box-shadow: 0px 0px 20px 10px rgb(41, 52, 60);
             position: relative;
-            transition: all .5s;
+            transition: all .25s;
             .cardBackground{
                 position: relative;
-                transition: all .5s;
+                transition: all .25s;
                 &::after{
-                    transition: all .5s;
+                    transition: all .25s;
                     content: '';
                     position: absolute;
                     top: 0;
@@ -48,7 +48,7 @@
                 left: 5vh;
                 font-weight: 700;
                 font-size: 25px;
-                transition: all .5s;
+                transition: all .25s;
             }
             .cardInfo{
                 position: absolute;
@@ -57,22 +57,22 @@
                 left: 5vh;
                 bottom: 3vh;
                 opacity: 0;
-                transition: all .5s;
+                transition: all .25s;
             }
             &:hover{
-                transition: all .5s;
+                transition: all .25s;
                 .cardInfo{
                     opacity: 1;
-                    transition: all .5s;
+                    transition: all .25s;
                 }
                 .cardHead{
                     opacity: 0;
-                    transition: all .5s;
+                    transition: all .25s;
                 }
                 .cardBackground{
-                    transition: all .5s;
+                    transition: all .25s;
                     &::after{
-                        transition: all .5s;
+                        transition: all .25s;
                         content: '';
                         position: absolute;
                         top: 0;
